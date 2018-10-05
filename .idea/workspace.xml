@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbd331d8-5ae0-41d1-a694-d99bebdf29e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="dbd331d8-5ae0-41d1-a694-d99bebdf29e2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,9 +79,9 @@
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <marker date="1538732666667" expanded="true" signature="13:18" ph="..." />
+                <marker date="1538741552151" expanded="true" signature="13:18" ph="..." />
               </folding>
             </state>
           </provider>
@@ -194,15 +192,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="24" width="683" height="744" extended-state="4" />
-    <editor active="true" />
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.39636913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3457792" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.33074534" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -281,9 +278,9 @@
     <entry file="file://$PROJECT_DIR$/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <marker date="1538732666667" expanded="true" signature="13:18" ph="..." />
+            <marker date="1538741552151" expanded="true" signature="13:18" ph="..." />
           </folding>
         </state>
       </provider>
