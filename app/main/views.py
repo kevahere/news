@@ -10,4 +10,4 @@ def index():
     message = "Welcome to the news room"
     title = "Welcome to the ultimate news room"
 
-    return render_template('index.html',general = general_news,)
+    return render_template('index.html',general = general_news,message = message, title = title)

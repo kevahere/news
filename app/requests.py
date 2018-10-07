@@ -9,7 +9,7 @@ def configure_request(app):
 
     global api_key, base_url
     api_key = app.config['NEWS_API_KEY']
-    base_url = app.comfig['NEWS_API_BASE_URL']
+    base_url = app.config['NEWS_API_BASE_URL']
 
 def get_sources(category):
     """Function that gets the json response to our url request"""
@@ -23,7 +23,7 @@ def get_sources(category):
 
         if get_sources_response['sources']:
             source_results_list = get_sources_response['sources']
-            source_results = process_resullts(source_results_list)
+            source_results = process_results(source_results_list)
 
     return source_results
 
