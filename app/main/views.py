@@ -11,3 +11,14 @@ def index():
     title = "Welcome to the ultimate news room"
 
     return render_template('index.html',general = general_news,message = message, title = title)
+
+@main.route('/articles/<id>')
+def articles(id):
+    '''
+       View  page function that returns the details page and its data
+       '''
+    name = "melissamalala"
+    articles = get_articles(id)
+
+    return render_template('article.html', articles=articles, name=name, name_source=id)
+
