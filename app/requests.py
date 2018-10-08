@@ -1,5 +1,5 @@
 import urllib.request, json
-from .models import Source
+from .models import Source, Article
 
 #Getting api key
 api_key = None
@@ -8,7 +8,7 @@ articles_url = None
 
 def configure_request(app):
 
-    global api_key, base_url
+    global api_key, base_url, articles_url
     api_key = app.config['NEWS_API_KEY']
     base_url = app.config['NEWS_API_BASE_URL']
     articles_url = app.config['NEWS_API_ARTICLE_BASE_URL']
@@ -56,9 +56,31 @@ def get_articles(id):
 
         articles_results = None
         if article_details_response['articles']:
-            article_results_list = articles_details_response['articles']
+            article_results_list = article_details_response['articles']
 
             articles_results = process_articles(article_results_list)
 
     return articles_results
 
+def process_articles(articles_list):
+    article_results = []
+    for article in articles_list:
+        id = article['source']['id']
+        author = article.get('author')
+        title = article.get('title')
+        description = article.get('description')
+        url = article.get('url')
+        urlToImage = article.get('urlToImage')
+        publishedAt = article.get('publishedAt')
+
+        if url:
+            articles_object = Article(id,
+                                      author,
+                                      title,
+                                      description,
+                                      url,
+                                      urlToImage,
+                                      publishedAt)
+            article_results.append(articles_object)
+
+    return article_results
