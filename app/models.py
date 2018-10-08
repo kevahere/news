@@ -16,3 +16,16 @@ class Source:
         5. category - The category of news ,e.g entertainment, business, technology
         6. country - The country that the news originates from, e.g ABC News is from USA
         '''
+class Article:
+    '''
+    class to define news article objects
+    '''
+
+    def __init__(self, id, author, title, description, url, urlToImage, publishedAt):
+        self.id = id
+        self.author = author
+        self.title = title
+        self.description = description
+        self.url = url
+        self.urlToImage = urlToImage
+        self.publishedAt = publishedAt
