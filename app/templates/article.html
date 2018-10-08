@@ -1,0 +1,23 @@
+{% extends 'base.html'%} {% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %} {% block content %}
+
+
+
+<div class="jumbotron mb-0 mt-0">
+
+    <h1 style="text-align:center">NEWS ARTICLES</h1>
+    <h3 style="text-align:center; color: black;" class="display-3">News From {{ name_source }} {%for article in articles
+        %}
+
+        <div class="card mb-3" style="max-width: 50rem;">
+            <img class="card-img-top" src="{{article.urlToImage}}" style="width:500px;height: 200px;" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"> <a href="{{article.url}}"> {{article.title}} </a></h5>
+                <p class="card-text">{{article.description}}</p>
+                <p class="card-text"><small class="text-muted">{{article.publishedAt}}</small></p>
+            </div>
+        </div>
+        {% endfor %}
+</div>
+
+{% endblock%}
