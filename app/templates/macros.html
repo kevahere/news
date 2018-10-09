@@ -1,9 +1,11 @@
-{% macro displaySourceList(source_list) %} {% for source in source_list %}
+{% macro displaySourceList(source_list) %}
+ {% for source in source_list %}
 <div class="card text-white border-primary bg-light mb-3" style="max-width: 18rem;">
   <div class="card-header"><a href="/articles/{{source.id}}"> {{source.name}}</a></div>
   <div class="card-body">
-    <h5 class="card-title">{{source.id}}</h5>
+    <!-- <h5 class="card-title">{{source.id}}</h5> -->
     <p class="card-text">{{ source.description}}</p>
   </div>
 </div>
-{% endfor %} {% endmacro %}
+{% endfor %}
+{% endmacro %}
